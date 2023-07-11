@@ -32,7 +32,6 @@
 
   <build>
     <plugins>
-
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
@@ -43,7 +42,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
-        <version>3.9.3</version>
+        <version>3.3.2</version>
         <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
@@ -58,39 +57,37 @@
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <configuration>
-          <reporting>
-            <plugins>
-              <plugin>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-              </plugin>
+          <reportPlugins>
+            <plugin>
+              <artifactId>maven-checkstyle-plugin</artifactId>
+            </plugin>
 
-              <plugin>
-                <artifactId>maven-jxr-plugin</artifactId>
-              </plugin>
+            <plugin>
+              <artifactId>maven-jxr-plugin</artifactId>
+            </plugin>
 
-              <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-              </plugin>
+            <plugin>
+              <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
 
-              <plugin>
-                <artifactId>maven-pmd-plugin</artifactId>
-              </plugin>
+            <plugin>
+              <artifactId>maven-pmd-plugin</artifactId>
+            </plugin>
 
-              <plugin>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-              </plugin>
+            <plugin>
+              <artifactId>maven-surefire-report-plugin</artifactId>
+            </plugin>
 
-              <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>findbugs-maven-plugin</artifactId>
-              </plugin>
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>findbugs-maven-plugin</artifactId>
+            </plugin>
 
-              <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>taglist-maven-plugin</artifactId>
-              </plugin>
-            </plugins>
-          </reporting>
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>taglist-maven-plugin</artifactId>
+            </plugin>
+          </reportPlugins>
         </configuration>
       </plugin>
     </plugins>
@@ -225,7 +222,7 @@
   </scm>
 
   <prerequisites>
-    <maven>3.9.3</maven>
+    <maven>3.0.3</maven>
   </prerequisites>
 
 </project>
